@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox Sample</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-wrap">
+      <header class="header-wrap">
+        <h1>Welcome</h1>
+      </header>
+      <nav class="nav-wrap">
+        <a href="#" class="toggleNav">☰ Menu</a>
+        <ul>
+          <li><a href="#">Item 1</a></li>
+          <li><a href="#">Item 2</a></li>
+          <li><a href="#">Item 3</a></li>
+          <li><a href="#">Item 4</a></li>
+          <li class="social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="social"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li class="social"><a href="#"><i class="fab fa-github"></i></a></li>
+          <li class="social"><a href="#"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <img src="http://lorempixel.com/1000/600/nature" alt="">
+      </section>
+      <section class="content-wrap">
+          <p>Sample layout showcasing flexbox and its properties</p>
+      </section>
+      <footer>
+        <p>&copy; Nishant Rao</p>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+      $(function() {
+        $('.toggleNav').on('click',function() {
+          $('.nav-wrap ul').toggleClass('open');
+        });
+      });
+    </script>
+  </body>
+</html>
