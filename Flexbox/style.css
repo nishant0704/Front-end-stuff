@@ -88,9 +88,9 @@ section, footer{
 
 @media all and (max-width:500px) {
 
-  /* .nav-wrap li {
+  .nav-wrap li {
     flex-basis:100%;
-  } */
+  }
 
 
   /* Turn on flexbox */
@@ -117,7 +117,7 @@ section, footer{
     display: none;
   }
 
-    .nav-wrap ul.open {
+    .nav-wrap ul .open {
       display:flex;
     }
 
