@@ -35,3 +35,23 @@ aside{
   align-items: center;
   background-color: #f2f2f2;
 }
+
+.content{
+  display:flex;
+  flex-direction: column;
+  flex:1 0 auto;
+}
+
+.music-head {
+  flex: 0 0 280px; /*Same memo, don't grow or shrink - stay at 280px*/
+  display: flex;
+  padding: 40px;
+  background-color: #4e4e4e;
+}
+
+
+.music-items {
+	flex: 1 0 auto;
+	list-style-type: none;
+	padding: 5px 10px 0px;
+}
