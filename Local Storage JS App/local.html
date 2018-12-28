@@ -14,13 +14,13 @@
         </ul>
         <form class="add-items">
           <input type="text" name="item" placeholder="Enter Item Name" required>
-          <button type="submit" value="+ Add Item">+ Add Item</button>
+          <button style="background-color:#008CBA;border-radius:4px;border:none;height:30px;" type="submit" value="+ Add Item">+ Add Item</button>
         </form>
     </div>
     <script type="text/javascript">
       const addItems = document.querySelector('.add-items')
       const itemsList = document.querySelector('.plates')
-      const items = []
+      const items = JSON.parse(localStorage.getItem('items')) || [];
 
       function addItem(e) {
         e.preventDefault();
@@ -29,9 +29,37 @@
           text,
           done:false,
         };
+        items.push(item);
+        populateList(items,itemsList);
+        localStorage.setItem('items',JSON.stringify(items));
         this.reset();
       }
+
+      function populateList(plates = [], platesList) {
+        platesList.innerHTML = plates.map((plate, i) => {
+          return `
+            <li>
+              <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked' : ''} />
+              <label for="item${i}">${plate.text}</label>
+            </li>
+            `;
+          }).join('');
+        }
+
+
+      // function populateList(plates =[],platesList){
+      //   platesList.innerHTML = plates.map((plate,i) => {
+      //     return `
+      //     <li>
+      //       <input type="checkbox" data-index=${i} id="item${i}" ${plate.done ? 'checked' : ''}>
+      //       <label for="item${i}">${plates.text}</label>
+      //     </li>
+      //     `;
+      //   }).join('');
+      // }
+
       addItems.addEventListener('submit',addItem)
+      populateList(items,itemsList)
     </script>
   </body>
 </html>
