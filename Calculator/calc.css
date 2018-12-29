@@ -1,0 +1,17 @@
+body{
+  background-color: orange;
+  text-align:center;
+}
+
+.wrapper{
+  background-color: grey;
+  width:300px;
+  margin:100px auto;
+  border:2px double black;
+}
+
+#display{
+  width:280px;
+  height:30px;
+  text-align: right;
+}
