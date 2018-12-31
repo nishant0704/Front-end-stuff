@@ -11,27 +11,49 @@
       <form class="form-container" name="display">
         <input class="view" type="text" name="view" placeholder="0">
       </form>
-      <button id="off" class="calBtn" type="button" name="button" onclick="off()">OFF</button>
-      <button id="on" class="calBtn" type="button" name="button" onclick="on()">ON</button>
-      <button id="clean" class="calBtn" onclick="clean()">C</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(7)">7</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(8)">8</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(9)">9</button>
-      <button class="calBtn" type="button" name="button" onclick="insert('/')">/</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(4)">4</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(5)">5</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(6)">6</button>
-      <button class="calBtn" type="button" name="button" onclick="insert('*')">*</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(1)">1</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(2)">2</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(3)">3</button>
-      <button class="calBtn" type="button" name="button" onclick="insert('-')">-</button>
-      <button class="calBtn" type="button" name="button" onclick="insert(0)">0</button>
-      <button class="calBtn" type="button" name="button" onclick="insert('.')">.</button>
-      <button class="calBtn" type="button" name="button" onclick="">=</button>
-      <button class="calBtn" type="button" name="button" onclick="insert('+')">+</button>
+      <table>
+        <tr>
+          <td class="content-top">
+            <button id="off" class="calBtn1" type="button" name="button" onclick="off()">OFF</button>
+            <button id="on" class="calBtn1" type="button" name="button" onclick="on()">ON</button>
+            <button id="clean" class="calBtn1" onclick="clean()">C</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="layout">
+            <button class="calBtn" type="button" name="button" onclick="insert(7)">7</button>
+            <button class="calBtn" type="button" name="button" onclick="insert(8)">8</button>
+            <button class="calBtn" type="button" name="button" onclick="insert(9)">9</button>
+            <button class="calBtn" type="button" name="button" onclick="insert('/')">/</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="layout">
+            <button class="calBtn" type="button" name="button" onclick="insert(4)">4</button>
+            <button class="calBtn" type="button" name="button" onclick="insert(5)">5</button>
+            <button class="calBtn" type="button" name="button" onclick="insert(6)">6</button>
+            <button class="calBtn" type="button" name="button" onclick="insert('*')">*</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="layout">
+            <button class="calBtn" type="button" name="button" onclick="insert(1)">1</button>
+            <button class="calBtn" type="button" name="button" onclick="insert(2)">2</button>
+            <button class="calBtn" type="button" name="button" onclick="insert(3)">3</button>
+            <button class="calBtn" type="button" name="button" onclick="insert('-')">-</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="content-new">
+            <button class="calBtn" type="button" name="button" onclick="insert(0)">0</button>
+            <button class="calBtn" type="button" name="button" onclick="insert('.')">.</button>
+            <button class="calBtn" type="button" name="button" onclick="equal()">=</button>
+            <button class="calBtn" type="button" name="button" onclick="insert('+')">+</button>
+          </td>
+        </tr>
+      </table>
       <footer>
-        <p>&copy; Nishant Rao</p>
+        <p><strong>&copy; Nishant Rao</strong></p>
       </footer>
     </div>
   </body>

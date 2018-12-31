@@ -7,11 +7,67 @@ body{
   background-color: grey;
   width:300px;
   margin:100px auto;
-  border:2px double black;
+  border:2px ridge blue;
+  border-radius: 4px;
 }
 
 .view{
-  width:280px;
-  height:30px;
+  width:95%;
+  height:50px;
   text-align: right;
+  border-radius: 4px;
+  font-size: 30px;
+  border:none;
+  outline:none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button{
+border-radius: 4px;
+border:none;
+outline:none;
+width:68px;
+height:42px;
+font-size: 25px;
+color:white;
+background-color: black;
+}
+
+#clean{
+  background-color:pink;
+}
+
+#off{
+  background-color: red;
+}
+
+.content-top{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .content-new{
+  display:flex;
+  justify-content: space-around;
+} */
+
+.layout{
+  display:flex;
+  justify-content:space-around;
+}
+
+
+.calBtn1{
+  width:72px;
+}
+
+button:hover{
+  margin-top: 5px;
+  border-bottom:2px solid yellow;
 }
