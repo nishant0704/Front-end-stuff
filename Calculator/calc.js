@@ -18,6 +18,14 @@ function off(){
   document.display.view.value = 'OFF';
   alert('press ON to continue');
   offBtn = document.querySelector('.calBtn');
+  offBtn1 = document.querySelector('.calBtn1');
+  // if (document.display.view.value == 'OFF') {
+  //   offBtn.disabled = false;
+  //   offBtn1.disabled = false;
+  // } else (document.display.view.value == 'ON'){
+  //   offBtn.disabled = false;
+  //   offBtn1.disabled = false;
+  // }
 }
 
 function on(){
