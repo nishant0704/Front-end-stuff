@@ -1,8 +1,12 @@
+// import { hello } from './modulesample';
+
+
 document.getElementById('add').addEventListener('click', function(){
   let item = document.getElementById('item').value;
   if(item){
-    console.log('item present')
+    // hello
+    console.log('item present');
   }else {
-    console.log('false')
+    console.log('false');
   }
 })
