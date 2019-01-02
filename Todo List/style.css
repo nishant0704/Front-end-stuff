@@ -1,12 +1,12 @@
 body{
   margin:0;
-  padding:0;
+  padding:80px 0 0 0 ;
 }
 
 header{
   width:100%;
   height:80px;
-  background-color: #add8e6;
+  background-color: rgb(173, 216, 230);
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   position:fixed;
@@ -21,8 +21,10 @@ header input{
   margin-top: 10px;
   width: 50%;
   height:50px;
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.2);
   outline:none;
+  font-size: 18px;
+  padding-left:15px;
   border-color: white;
   border-style: solid;
   border-top-left-radius: 5px;
@@ -40,11 +42,30 @@ button{
   border-color: white;
   border-style: solid;
   outline:none;
+  padding:0;
   border-radius: 25px;
   margin-left: -53px;
 }
 
 ::placeholder{
-  padding-left:5px;
   color:white;
+}
+
+.plus {
+  font-size: 15px;
+}
+
+ul.todo{
+  text-align: center;
+  padding-left: 0;
+}
+ul.todo li{
+  display: inline-block;
+  text-align: left;
+  width:52%;
+  height:50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: none;
+  box-shadow: 3px 5px 4px rgba(173, 216, 230,.3);
 }

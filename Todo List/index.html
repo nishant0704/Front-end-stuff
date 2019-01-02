@@ -2,13 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>ToDo List JS</title>
   </head>
   <body>
     <header>
-      <input type="text" placeholder="Enter Acitvity">
-      <button type="button">+</button>
+      <input type="text" placeholder="Enter Acitvity" id="item">
+      <button type="button" id="add"><i class="fas fa-plus plus"></i></button>
     </header>
+    <div class="container" >
+      <ul class="todo">
+        <li>Item</li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
