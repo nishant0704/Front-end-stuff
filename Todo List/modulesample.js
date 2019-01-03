@@ -1,5 +1,5 @@
 
 
-var hello = console.log('item present');
-
-export default hello;
+export default function hello(){
+  console.log('item present');
+}
