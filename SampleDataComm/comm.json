@@ -3,12 +3,16 @@
   "description" : "Fetching JSON DATA from .json file and displayin in HTML",
   "articles" : [
        {
-          "title" : "Handling user events in JavaScript",
-          "url"   : "http://code-maven.com/handling-events-in-javascript"
+          "title" : "Lorem Ipsum",
+          "text"   : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
        },
        {
-          "title" : "On-load counter with JavaScript and local storage",
-          "url"   : "http://code-maven.com/on-load-counter-with-javascript-and-local-storage"
+          "title" : "European Languages",
+          "text"   : "The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages."
+       },
+       {
+         "title" : "Dummy Text",
+         "text" : "Egestas gravida erat. Per est venenatis justo morbi magna montes sem litora quam. Imperdiet. Pretium litora nunc hendrerit pulvinar dis nullam nunc ante rutrum nec dis placerat placerat diam ullamcorper magna facilisi posuere vel pellentesque amet varius curae; quisque erat elit placerat viverra Nec in taciti A orci porttitor a."
        }
   ]
 }

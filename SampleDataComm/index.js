@@ -22,8 +22,13 @@ ajax_call('./comm.json',function(data){
   html += "<h3>" + data["description"] + "</h3>";
   html += "<select>";
     for(var i=0;i < data['articles'].length;i++){
-      html += '<option><a href = "' + data["articles"][i]["url"] + '">' + data["articles"][i]["title"] + "</a></option>";
+      html += '<option>'+ data["articles"][i]["title"] + '</option>';
     }
   html += "</select>";
+  html += "<p>";
+    for(var j=0;j < data["articles"].length;j++){
+      html += '<h4>' + data["articles"][j]["text"] + '</h4>';
+    }
+  html += "</p>";
   document.getElementById("content").innerHTML = html;
 });
