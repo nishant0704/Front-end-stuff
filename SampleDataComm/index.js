@@ -25,10 +25,10 @@ ajax_call('./comm.json',function(data){
       html += '<option>'+ data["articles"][i]["title"] + '</option>';
     }
   html += "</select>";
-  html += "<p>";
-    for(var j=0;j < data["articles"].length;j++){
-      html += '<h4>' + data["articles"][j]["text"] + '</h4>';
-    }
-  html += "</p>";
+  // html += "<p>";
+  //   for(var j=0;j < data["articles"].length;j++){
+  //     html += '<h4>' + data["articles"][j]["text"] + '</h4>';
+  //   }
+  // html += "</p>";
   document.getElementById("content").innerHTML = html;
 });
