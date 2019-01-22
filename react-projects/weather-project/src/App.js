@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Title from '../src/components/title/Title';
+import Form from '../src/components/form/Form';
+import Weather from '../src/components/weather/Weather';
 import './App.css';
+
+const API_KEY = "0246beccae85627664c3f84a8c49b8fc";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Title/>
+        <Form/>
+        <Weather/>
       </div>
     );
   }
