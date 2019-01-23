@@ -7,17 +7,42 @@ import './App.css';
 const API_KEY = "0246beccae85627664c3f84a8c49b8fc";
 
 class App extends Component {
-  getWeatherData = async () => {
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=bangalore,IN&appid=${API_KEY}&units=metric`);
+  state={
+    temperature:'',
+    city:'',
+    country:'',
+    humidity:'',
+    description:'',
+    error:''
+  }
+  getWeatherData = async (e) => {
+    e.preventDefault();
+    const city = e.target.elements.city.value;
+    const country = e.target.elements.country.value;
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
     const data = await api_call.json();
     console.log(data);
+    this.setState({
+      temperature:data.main.temp,
+      city:data.name,
+      country:data.sys.country,
+      humidity:data.main.humidity,
+      description:data.weather[0].description,
+      error:''
+    });
   }
   render() {
     return (
       <div className="App">
         <Title/>
-        <Form/>
-        <Weather/>
+        <Form getWeatherData={this.getWeatherData}/>
+        <Weather
+          temperature={this.state.temperature}
+          city={this.state.city}
+          country={this.state.country}
+          humidity={this.state.humidity}
+          description={this.state.description}
+          error={this.state.error}/>
       </div>
     );
   }
