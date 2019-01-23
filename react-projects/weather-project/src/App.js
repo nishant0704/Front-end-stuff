@@ -13,7 +13,8 @@ class App extends Component {
     country:'',
     humidity:'',
     description:'',
-    error:''
+    lat:'',
+    lon:''
   }
   getWeatherData = async (e) => {
     e.preventDefault();
@@ -28,7 +29,8 @@ class App extends Component {
       country:data.sys.country,
       humidity:data.main.humidity,
       description:data.weather[0].description,
-      error:''
+      lat:data.coord.lat,
+      lon:data.coord.lon
     });
   }
   render() {
@@ -42,7 +44,8 @@ class App extends Component {
           country={this.state.country}
           humidity={this.state.humidity}
           description={this.state.description}
-          error={this.state.error}/>
+          lat={this.state.lat}
+          lon={this.state.lon}/>
       </div>
     );
   }
