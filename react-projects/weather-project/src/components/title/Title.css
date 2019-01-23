@@ -1,0 +1,11 @@
+.title-wrapper{
+  background-image:url('https://verdict4u.files.wordpress.com/2016/09/google-now-wallpaper-2.png?w=1000&h=');
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

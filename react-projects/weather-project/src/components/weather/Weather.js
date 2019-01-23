@@ -5,9 +5,9 @@ function More(props){
     return null;
   }
   return(
-    <div>
+    <div className="">
       {props.lat && <p>Lattitude:{props.lat}<span>&deg;</span></p>}
-      {console.log(props.lat)}
+      {props.lon && <p>Longitude:{props.lon}<span>&deg;</span></p>}
     </div>
   );
 }
@@ -36,10 +36,10 @@ class Weather extends React.Component{
         {this.props.description && <p>Conditions: {this.props.description}</p>}
         {this.props.description &&
           <div>
-           <button onClick={this.toggleClick}>
+           <button className="btn btn-success mb-2" onClick={this.toggleClick}>
             { this.state.clicked ? 'View Less' : 'View More' }
            </button>
-           { this.state.clicked ? <More lat={this.props.lat} warn={this.state.clicked}/> : ''}
+           { this.state.clicked ? <More lat={this.props.lat} lon={this.props.lon} warn={this.state.clicked}/> : ''}
           </div>
           }
       </div>

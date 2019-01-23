@@ -35,20 +35,29 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Title/>
-        <Form getWeatherData={this.getWeatherData}/>
-        <Weather
-          temperature={this.state.temperature}
-          city={this.state.city}
-          country={this.state.country}
-          humidity={this.state.humidity}
-          description={this.state.description}
-          lat={this.state.lat}
-          lon={this.state.lon}/>
+      <div className="wrapper">
+        <div className="main">
+          <div className="row">
+            <div className="col-5 pr-0">
+              <Title/>
+            </div>
+            <div className="col-7" style={{backgroundColor:"#1E1A1A"}}>
+              <Form getWeatherData={this.getWeatherData}/>
+              <Weather
+              temperature={this.state.temperature}
+              city={this.state.city}
+              country={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              lat={this.state.lat}
+              lon={this.state.lon}/>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 }
+
 
 export default App;
