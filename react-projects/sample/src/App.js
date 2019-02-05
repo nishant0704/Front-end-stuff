@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Person from './Person/Person';
+import Radium from 'radium';
 import './App.css';
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
     const center={
       textAlign:'center'
     }
+
     const style={
       backgroundColor :'blue',
       border:'1px solid black',
@@ -45,7 +47,9 @@ class App extends Component {
       borderRadius:'5px',
       cursor:'pointer',
       marginTop:'5px',
+
     }
+
     let person = null;
     if(this.state.showPerson){
       person = (
