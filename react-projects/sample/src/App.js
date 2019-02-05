@@ -27,6 +27,12 @@ class App extends Component {
     this.setState({showPerson:!show})
   }
 
+  deletePerson = (personIndex) => {
+    const persons = [...this.state.persons];
+    persons.splice(personIndex,1);
+    this.setState({persons:persons})
+  }
+
   render() {
     const style={
       backgroundColor :'blue',
@@ -42,9 +48,12 @@ class App extends Component {
       person = (
         <div>
           <button style={style} onClick={this.changeName}>Change Name!</button>
-          <Person name={this.state.persons[0].name} age={this.state.persons[0].age}>I m an Engineer</Person>
-          <Person name={this.state.persons[1].name} age={this.state.persons[1].age}/>
-          <Person name={this.state.persons[2].name} age={this.state.persons[2].age}/>
+          {this.state.persons.map( (person, index) => {
+            return <Person
+            click={() => this.deletePerson(index)}
+            name={person.name}
+            age={person.age} />
+          })}
       </div>
     )
     }
