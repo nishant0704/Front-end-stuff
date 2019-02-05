@@ -5,9 +5,9 @@ import './App.css';
 class App extends Component {
   state = {
     persons : [
-      {name:"Nishant",age:26},
-      {name:"Shashank",age:20},
-      {name:"Drago",age:18}
+      {id:1,name:"Nishant",age:26},
+      {id:2,name:"Shashank",age:20},
+      {id:3,name:"Drago",age:18}
     ],
     showPerson:false
   }
@@ -34,11 +34,14 @@ class App extends Component {
   }
 
   render() {
+    const center={
+      textAlign:'center'
+    }
     const style={
       backgroundColor :'blue',
       border:'1px solid black',
       padding:'10px',
-      color:'white',
+      color:'black',
       borderRadius:'5px',
       cursor:'pointer',
       marginTop:'5px',
@@ -50,15 +53,25 @@ class App extends Component {
           <button style={style} onClick={this.changeName}>Change Name!</button>
           {this.state.persons.map( (person, index) => {
             return <Person
+            key={person.id}
             click={() => this.deletePerson(index)}
             name={person.name}
             age={person.age} />
           })}
       </div>
-    )
+    );
+    style.backgroundColor = 'purple';
+    }
+
+    let bg = [];
+    if(this.state.persons.length <= 2){
+      bg.push('neon1');
+    }
+    if(this.state.persons.length <= 1){
+      bg.push('neon2');
     }
     return (
-      <div className="App">
+      <div style={center} className={bg.join(' ')}>
         <h1>Hello There</h1>
         <button style={style} onClick={this.showPersons}>Toggle Person</button>
         {person}
