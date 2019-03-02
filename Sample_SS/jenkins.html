@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Jenkins </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="jenkins.css">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="navigation-wrapper">
+        <div class="menu"><i class="fas fa-bars"></i></div>
+        <h4>Jenkins</h4>
+        <div class="select-wrapper">
+          <select class="collective" name="Dashboards">
+            <option value="1">Dashboards</option>
+          </select>
+          <select class="collective" name="Projects">
+            <option value="2">Projects</option>
+          </select>
+          <select class="collective" name="Issues">
+            <option value="3">Issues</option>
+          </select>
+          <select class="collective" name="Capture">
+            <option value="4">Capture</option>
+          </select>
+        </div>
+        <div class="right-wrapper">
+          <div class="nav-search">
+            <input type="text" name="search" value="" placeholder="Search" class="nav-search-field">
+            <button type="submit" class="search-button"><i class="fa fa-search old"></i></button>
+          </div>
+          <div class="question-wrapper">
+            <i class="fas fa-question-circle"></i>
+          </div>
+          <div>
+            <h4>Log In </h4>
+          </div>
+        </div>
+      </div>
+      <h2>Browse projects</h2>
+      <div class="body-wrapper">
+        <div class="left-side">
+          <div style="margin-left:15px">
+            <h5 style="margin-bottom:5px">PROJECT TYPES</h5>
+            <h5 style="margin:0px;margin-bottom:5px">All project types</h5>
+            <ul style="list-style:none;padding-left:5px;margin-top:0px">
+              <li>Software</li>
+              <li>Business</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-side">
+          <div style="margin-left:15px">
+            <h3 style="color:red">Software - All categories</h3>
+            <button type="submit" class="search-buttn"><i class="fa fa-search new"></i></button>
+            <input type="text" name="search" value="" placeholder="Search" class="search">
+            <table>
+              <head>
+                <tr>
+                  <th>Project</th>
+                  <th>Key</th>
+                  <th>Project type</th>
+                  <th>Project lead</th>
+                  <th>Project category</th>
+                  <th>URL</th>
+                </tr>
+              </head>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
